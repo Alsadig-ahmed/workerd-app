@@ -3,6 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
+    "wrangler": "^3.69.1",
     "@types/bun": "latest"
   },
   "peerDependencies": {
