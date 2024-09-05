@@ -2,6 +2,9 @@
   "name": "my-workerd-app",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "workerd": "workerd serve config.capnp "
+  },
   "devDependencies": {
     "wrangler": "^3.69.1",
     "@types/bun": "latest"
