@@ -2,12 +2,11 @@ export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
-    console.log(request, env, ctx);
     if (url.pathname === "/fetch") {
       const remote = "http://localhost:8001/json";
       return await fetch(remote, request);
     }
-    if (url.pathname === "/formData") {
+    if (url.pathname === "/formdata") {
       const formData = await request.formData();
       console.log(formData);
       return new Response(formData, {
